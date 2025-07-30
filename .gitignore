@@ -1,0 +1,8 @@
+#ignore backup files
+*.idx
+*.bak
+*~
+
+# Ignore Windows Explorer config file
+desktop.ini
+test/
