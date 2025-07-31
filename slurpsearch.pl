@@ -7,6 +7,7 @@ use 5.020;
 use strict;
 use warnings;
 use utf8;
+use open qw/:std :utf8/;
 
 my $infilename='Nkonya.fwdata';
 use File::Slurper qw(read_text);
