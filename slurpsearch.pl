@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# perl slurpsearch.pl
+# FILE=infile perl slurpsearch.pl
 # slurp a file and do searches on it
 
 
@@ -9,7 +9,9 @@ use warnings;
 use utf8;
 use open qw/:std :utf8/;
 
-my $infilename='Nkonya.fwdata';
+my $infilename= $ENV{FILE};
+$infilename='Nkonya.fwdata' if !$infilename;
+
 use File::Slurper qw(read_text);
 
 my $contents = read_text($infilename);
