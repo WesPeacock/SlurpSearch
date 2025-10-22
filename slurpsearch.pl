@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 # FILE=infile perl slurpsearch.pl
 # slurp a file and do searches on it
+# Note that multiline searches in perl require tn */s* option.
 
 
 use 5.020;
