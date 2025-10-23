@@ -20,5 +20,5 @@ $infilename='NkonyaD1/00NKOU.opl' if !$infilename;
 use File::Slurper qw(read_text);
 
 my $contents = read_text($infilename);
-$contents =~ s/(\\s([0-9])* [^#]*#)(.*?\\v [0-9]+#)/$3$1/sg;
+$contents =~ s/(\\s[0-9]* [^#]*#)(.*?\\v [0-9]+#)/$2$1/sg;
 print $contents;
